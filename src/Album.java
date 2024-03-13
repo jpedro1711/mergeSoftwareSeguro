@@ -4,7 +4,7 @@ import java.util.List;
 public class Album {
     private String nome;
     private String dataLancamento;
-    private List<String> musicas = new ArrayList<>();
+    private List<Musica> musicas = new ArrayList<>();
 
     public Album(String nome, String dataLancamento) {
         this.nome = nome;
@@ -32,11 +32,11 @@ public class Album {
         this.dataLancamento = dataLancamento;
     }
 
-    public List<String> getMusicas() {
+    public List<Musica> getMusicas() {
         return musicas;
     }
 
-    public void addMusica(String musica) {
+    public void addMusica(Musica musica) {
         this.musicas.add(musica);
     }
 }
